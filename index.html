@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--Meta data-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="This is the index of a website portfolio. This portfolio uses HTML, CSS, and JavaScript.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devin's Portfolio Home</title>
+<!-- Font-Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Bootstrap Stylesheet-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!--This is the header section-->
+    <header>
+        <img src="images/logo.png" alt="logo" height="300" width="300" class="img-fluid logo">
+    </header>
+<!--This is the nav section-->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="javascript.html">JavaScript Game</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+<!--This is the hero-->
+        <div id="homehero">
+            <h1 class="fade-in">Out of this world custom website designs.</h1>
+        </div id="homehero">
+<!--This is the main section-->
+    <div id="wrapper">   
+        <main>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="selfie"><img src="images/selfie.png" alt="selfie" height="300" width="300"></div>
+                        <p><small>Website creator, Devin Sutherlin.</small></p>
+                    </div>
+                    <div class="col-sm-6">
+                        <h2>About Me</h2>
+                        <p>My name is Devin Sutherlin. I was born and raised in Minnesota. Currently I am a student at Saint Paul College and self proclaimed artist. My major is Computer Programming with an emphasis in Web Development. The goal of this website is to have a space where I can put content. The website is fully functional and responsive. The website was coded from scratch using HTML, CSS, and JavaScript. Please feel free to click around and explore. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2>Map of My Hometown</h2>
+                        <p>This is an embeded map of my hometown. It has beautiful terrain filled with many parks and lakes.</p>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63940.41510676821!2d-92.99048534219207!3d44.90719009437664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87f7d9e9949d95ab%3A0x8baf04fda71d8c10!2sWoodbury%2C%20MN!5e0!3m2!1sen!2sus!4v1682108742481!5m2!1sen!2sus" width="800" height="400" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2>Website Gallery</h2>
+                        <p>This is a gallery featuring some other websites I made in a HTML fundamentals course.</p>
+                        <div class="gallery">
+                            <div class="preview">
+                                <img id="preview" src="images/animalswebsite.png" style="display:block;margin:0 auto;" alt="Animal Website"  height="600" width="800"/>
+                            </div>
+                            <div class="gallery-thumbnails" style="margin:0 auto;text-align:center">
+                                <img onclick="document.getElementById('preview').src=document.getElementById('img1').src" id="img1" src="images\animalswebsite.png" alt="Animal Website" height="600" width="800"/>
+                                <img onclick="document.getElementById('preview').src= document.getElementById('img2').src;" id="img2" src="images\puppieswebsite.png" alt="Puppy Website"  height="600" width="800"/>
+                                <img onclick="document.getElementById('preview').src = document.getElementById('img3').src;" id="img3" src="images\pacificwebsite.png" alt="Pacific Trails Website" height="600" width="800"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+<!--This is the footer section-->
+        <footer>
+            <div class="container-fluid">
+                <div class="row footer1000">
+                    <div class="col-sm-6">
+                        <img src="images/logo.png" alt="logo" height="150" width="150" class="img-fluid logo">
+                        <h4>Portfolio Website</h4>
+                        <p>This is a website made for a HTML fundamentals course at Saint Paul College.</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="footer-icons">
+                            <h4>Follow me on social media!</h4>
+                            <a href="https://www.linkedin.com/in/devin-sutherlin-929100274/"target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a><br>
+                            <a href="https://twitter.com/DevinBusiness"target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a><br>
+                            <a href="your link here"target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2023 Devin Sutherlin. All rights reserved.
+            </div>
+        </footer>
+    </div>
+<!--jQuery, Popper, and Bootstrap Javascript files-->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
