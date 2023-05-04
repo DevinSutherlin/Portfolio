@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,800;1,200&display=swap');
+header{
+  text-align: center;
+  background-color: white;
+}
+body{
+  background-image: url(images/stars.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* Vertical Navigation Bar */
+nav{
+  background-color: rgb(0, 0, 0);
+  padding-top: 1em;
+  border-top: 2px solid gold;
+  border-bottom: 2px solid gold;
+}
+nav ul{
+  list-style-type: none;
+  text-align: center;
+}
+nav li{
+  display: inline;
+}
+nav a{
+  text-decoration: none;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin: 1em;
+}
+nav a:link{
+  color: rgb(255, 255, 255);
+}
+nav a:visited{
+  color: rgb(255, 255, 255);
+}
+nav a:hover{
+  color: blue;
+}
+nav a:active{
+  color: whitesmoke;
+}
+/* hero */
+#homehero {
+  background-image:url(images/hero.jpg);
+  height: 1200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-bottom: 1px solid gold;
+}
+#homehero h1{
+  color: gold;
+  text-align: center;
+  text-shadow: 7px 7px rgb(145, 145, 145);
+  font-weight: bold;
+  font-size: 75px;
+  padding-top: 400px;
+}
+/* css animation */
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 4s;
+}
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+#wrapper{
+  background-color: black;
+  max-width: 1400px;
+  text-align: center;
+  margin: auto;
+  padding-top: 25px;
+}
+/* main */
+main{
+  max-width: 1200px;
+  margin-top: 5em;
+  text-align: center;
+  margin: auto;
+}
+h2{
+  color: white;
+  text-decoration: underline;
+  text-align: center;
+}
+.selfie img{
+  border-radius: 50%;
+  text-align: center;
+  margin: auto;
+  display: block;
+  border: 2px solid gold;
+}
+p{
+  color: white;
+  text-align: center;
+}
+.col-sm-6{
+  padding-top: 25px;
+}
+.col-sm-12{
+  padding-top: 25px;
+}
+/* Gallery CSS*/
+.gallery .preview{
+  width:100%
+  height:auto;
+}
+.gallery .gallery-thumbnails img {
+  width:100px;
+  height:75px;
+  margin: 25px 10px 10px 0;
+  border: 2px solid gold;
+  margin-bottom: 25px;
+}
+.gallery .gallery-thumbnails img:hover {
+  opacity: .8;
+  cursor: pointer;
+}
+.gallery .preview img#preview {
+  padding: 0px;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto !important;
+  display: block !important;
+  border: 2px solid gold;
+}
+/* font awesome css */
+.fa-github{
+  font-size: 3em;
+}
+.fa-twitter{
+  font-size: 3em;
+}
+.fa-linkedin{
+  font-size: 3em;
+}
+/* resume div */
+div.resume{
+  background-color: rgb(255, 255, 255);
+  max-width: 800px;
+  box-shadow: 10px 10px rgb(100, 100, 100);
+  text-align: center;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: 25px;
+  color: black;
+}
+ul{
+  list-style-position: inside;
+}
+.resume p{
+  color: black;
+}
+.resume h2{
+  color: black;
+  text-decoration: underline;
+  text-align: center;
+}
+div.game-controls{
+  padding-bottom: 25px;
+}
+iframe{
+  display: block;
+  margin: 0% auto;
+  max-width: 100%;
+}
+.form iframe{
+  margin-bottom: 25px;
+}
+footer h4{
+  font-weight: bold;
+  text-decoration: underline;
+}
+footer p{
+  color: black;
+}
+footer{
+  background-color: rgb(255, 255, 255);
+}
+.footer1000{
+  text-align: center;
+  margin: auto;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  max-width: 800px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.footer-bottom{
+  text-align: center;
+  background-color: black;
+  color: white;
+  height: 25px;
+}
+.footer-icons{
+  text-align: center;
+}
+/* CSS For Tablets */
+@media only screen and (max-width: 1024px){
+  h1{
+    font-size: 2em;
+  }
+}
+
+/* CSS For Smartphones */
+@media only screen and (max-width:768px){
+  h1{
+    font-size: 1.5em;
+  }
+}
+
+/* CSS For JavaScript */
+canvas {
+  margin:0 auto;
+  display:block;
+  background-image: url(images/landscape.png);
+  border: 5px solid gold;
+  box-shadow: 4px 4px 16px grey;
+}
+.game-controls {
+  text-align: center;
+  margin-top: 20px;
+}  
+/* JavaScript Game changes for mobile */
+.mobile{
+	display:none;
+}
+@media only screen and (max-width: 768px){
+	.desktop{
+		display:none;
+	}
+	.mobile{
+		display: block;
+		touch-action: manipulation;
+	}
+}
